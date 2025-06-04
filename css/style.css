@@ -186,9 +186,10 @@ footer h3{
     padding-top: 3%;
 }
 
-@media(max-width: 599px) {
+@media(max-width: 599px){
 
-    .catalogo_grid{
+
+.catalogo_grid{
 
     display: flex;
     
@@ -206,42 +207,36 @@ footer h3{
 
     width: 100%;
     
-    padding-bottom: 15%;
+    padding-bottom: 15%;}
 
-}
+    .card-img-top{
+        height: 12rem;
+        width: 100%;
+    }
 
-.card-img-top{
-    height: 12rem;
-    width: 100%;
-}
 
-.titulo_cards{
-    grid-area: titulo;
+    .card1{
+        height: auto;
+        width: auto;
+        padding: 2rem;
+        
 
-}
+    }
+    .card2{
+        
+        padding: 2rem;
 
-.card1{
-    height: auto;
-    width: auto;
-    padding: 2rem;
-    
+    }
 
-}
-.card2{
-    
-    padding: 2rem;
+    .card3{
+        
+        padding: 2rem;
+    }
 
-}
-
-.card3{
-    
-    padding: 2rem;
-}
-
-.card4{
-    
-    padding: 2rem;
-}
+    .card4{
+        
+        padding: 2rem;
+    }
 
 }
 
