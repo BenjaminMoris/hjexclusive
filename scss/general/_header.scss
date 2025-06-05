@@ -5,14 +5,17 @@
 
 .navbar {
   background-color: $color-navbar;
-
+  
   .nav-link {
     color: $color-texto;
     margin: 0 10px;
+    padding: 10px;
+
 
     &:hover {
       background-color: $color-hover;
-      border-radius: 5px;
+      border-radius: 10px;
+      color:#fff;
     }
 
     &.active {
@@ -31,12 +34,20 @@
   @media (max-width: 768px) {
     .nav-link {
       margin: 5px 0;
+      padding: 5px;
     }
   }
 }
 
 .logo-hj {
   width: 80px;
-  height: 60px;
+  height: auto;
+  border-radius: 20px;
+  box-shadow:0 2px 6px rgba(0, 0, 0, 0.2);
+  border: 2px solid #ccc;
   object-fit: contain;
+
+  &:hover {
+    transform: scale(1.1); 
+  }
 }

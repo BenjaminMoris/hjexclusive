@@ -1,0 +1,94 @@
+
+
+// Carrusel ofertas //
+
+.carousel {
+  margin-bottom: 30px;
+
+  .carousel-item img {
+    object-fit: cover;
+    height: 400px;
+  }
+
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    filter: invert(1);
+  }
+
+  @media (max-width: 768px) {
+    .carousel-item img {
+      height: 250px;
+    }
+  }
+}
+
+
+
+
+//"Oportunidades del mes" //
+
+.carruseltext_grid {
+  padding: 2rem;
+  text-align: center;
+
+  h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  @media (max-width: 768px) {
+    padding: 1rem;
+
+    h2 {
+      font-size: 1.4rem;
+    }
+
+    p {
+      font-size: 0.95rem;
+    }
+  }
+}
+
+// Marcas //
+
+.grid_marcas {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+  padding: 2rem;
+
+  li {
+    text-align: center;
+    font-weight: bold;
+  }
+
+  img {
+    width: 100px;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+.titulo_marcas {
+  text-align: center;
+  font-size: 1.6rem;
+  margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+  .grid_marcas {
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+    padding: 1rem;
+  }
+
+  .titulo_marcas {
+    font-size: 1.3rem;
+  }
+}
