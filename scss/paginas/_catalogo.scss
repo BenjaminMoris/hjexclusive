@@ -1,0 +1,33 @@
+
+// Catalogo //
+
+.catalogo_box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem; 
+
+  .card-producto {
+    width: 18rem;
+
+    .card-img-top {
+      object-fit: cover;
+      height: 180px; 
+    }
+
+    .card-body {
+      h5 {
+        font-weight: 700;
+        font-size: 1.25rem;
+      }
+      p {
+        font-size: 1rem;
+      }
+    }
+
+    .list-group-item {
+      font-size: 0.9rem;
+      color: #555;
+    }
+  }
+}

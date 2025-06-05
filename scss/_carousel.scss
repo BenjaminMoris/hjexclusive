@@ -1,0 +1,22 @@
+
+// Carrusel ofertas //
+
+.carousel {
+  margin-bottom: 30px;
+
+  .carousel-item img {
+    object-fit: cover;
+    height: 400px;
+  }
+
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    filter: invert(1);
+  }
+
+  @media (max-width: 768px) {
+    .carousel-item img {
+      height: 250px;
+    }
+  }
+}

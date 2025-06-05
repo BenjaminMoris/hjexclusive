@@ -1,0 +1,33 @@
+
+// contacto //
+
+.h2_mapa {
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.mapa-iframe {
+  width: 100%;
+  height: 300px;
+  border: 0;
+  border-radius: 6px;
+}
+
+.form_contacto {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+
+  form {
+    display: flex;
+    flex-direction: column;
+
+    .mb-3 {
+      margin-bottom: 1.5rem;
+    }
+
+    button {
+      min-width: 100px;
+    }
+  }
+}

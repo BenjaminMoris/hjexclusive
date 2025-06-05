@@ -1,327 +1,248 @@
-/* selector + propiedad + valor */
-
-/* paleta de colores
-083358  rgb(8, 51, 88)
-0F4471  rgb(15, 68, 113)
-FC3C3C  rgb(252, 60, 60)
-F6F6F6  rgb(246, 246, 246)
-/*
-
-
-
-
-/*Generales Sitio*/
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/*navbar*/
-
-
-
-.navbar-expand-lg .navbar-collapse {
-    display: flex;
-    justify-content: flex-end;
-
+body {
+  font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
+  background-color: #f5f5f5;
+  color: #212529;
 }
 
-/* Footer */
-
-footer { 
-    background-color:#f6f6f6 ;
-    height: 10rem;
-    padding-top: 2%;
-    
-
+.navbar {
+  background-color: #ffffff;
+}
+.navbar .nav-link {
+  color: #212529;
+  margin: 0 10px;
+}
+.navbar .nav-link:hover {
+  background-color: #e2e2e2;
+  border-radius: 5px;
+}
+.navbar .nav-link.active {
+  font-weight: bold;
+}
+.navbar .navbar-toggler {
+  border: none;
+}
+.navbar .navbar-brand img {
+  border-radius: 6px;
+}
+@media (max-width: 768px) {
+  .navbar .nav-link {
+    margin: 5px 0;
+  }
 }
 
-footer h3{
-    text-align: center;
-
+.logo-hj {
+  width: 80px;
+  height: 60px;
+  object-fit: contain;
 }
 
-
-.redes h3{
-    text-align: center;
-    
+footer {
+  background-color: #333;
+  color: white;
+  padding: 2rem;
+  text-align: center;
 }
-
-.redes{
-
-    display: flex;
-    justify-content: center;
+footer h3 {
+  margin-bottom: 1rem;
+}
+footer .redes {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+footer .redes a {
+  display: inline-block;
+}
+footer .redes a img {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.2s ease;
+}
+footer .redes a img:hover {
+  transform: scale(1.1);
+}
+@media (max-width: 768px) {
+  footer .redes {
+    flex-direction: row;
     align-items: center;
-
-    height: 5rem;
-    width: 100%
+  }
 }
 
-
-.img_redes {
-    margin: 20px;
-    
-    display: flex;
-   
-    height: 2rem;
-    
-    
+.catalogo_box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+.catalogo_box .card-producto {
+  width: 18rem;
+}
+.catalogo_box .card-producto .card-img-top {
+  object-fit: cover;
+  height: 180px;
+}
+.catalogo_box .card-producto .card-body h5 {
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+.catalogo_box .card-producto .card-body p {
+  font-size: 1rem;
+}
+.catalogo_box .card-producto .list-group-item {
+  font-size: 0.9rem;
+  color: #555;
 }
 
-
-
-/* index */
-
-/* index Grid */
-
-.index_grid{
-
-    border-top: outset;
-    
-    display: grid;
-
-    grid-template-areas:
-    "carrusel textoc"
-    "titulo titulo"
-    "marcas marcas";
-
-    grid-template-columns: 2fr 1fr;
-
-    grid-template-rows: 1fr 5% 1fr;
-    
-    justify-items: center;
-    align-items: center;
-
+.cotizador {
+  max-width: 600px;
+  margin: 0 auto;
+}
+.cotizador form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.cotizador form .form-label {
+  font-weight: 500;
+}
+.cotizador form .form-control,
+.cotizador form .form-select {
+  padding: 0.5rem 0.75rem;
+}
+.cotizador form button {
+  align-self: flex-start;
+  min-width: 120px;
 }
 
-.carrusel_grid{
-    grid-area: carrusel;
-    padding: 3%;
-    width: 100%; 
-    
+.h2_mapa {
+  font-weight: 600;
+  margin-bottom: 1rem;
 }
 
-.carruteltext_grid{ 
-    grid-area: textoc;
-    width: 100%;
-    
+.mapa-iframe {
+  width: 100%;
+  height: 300px;
+  border: 0;
+  border-radius: 6px;
 }
 
-.titulo_marcas{
-    grid-area: titulo;
+.form_contacto {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.form_contacto form {
+  display: flex;
+  flex-direction: column;
+}
+.form_contacto form .mb-3 {
+  margin-bottom: 1.5rem;
+}
+.form_contacto form button {
+  min-width: 100px;
 }
 
-
-/* Grid Marcas */
-
-
-
-.grid_marcas{
-    
-    border-top: outset;
-    border-bottom: outset;
-    
-
-    grid-area: marcas;
-    
-    display: grid;
-    
-    grid-template-areas: 
-    "marca1 marca2 marca3"
-    "texto1 texto2 texto3"
-    "marca4 marca5 marca6"
-    "texto4 texto5 texto6";
-
-    grid-template-columns: 1fr 1fr 1fr;
-
-    grid-template-rows: 45% 5% 45% 5%;
-
-    
-    width: 100%; height: 100%; padding: 3%  
-
+.taller-img {
+  width: 100%;
+  height: auto;
+  max-width: 700px;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
 }
 
-.marca1{grid-area: marca1;}
-
-.texto1{grid-area: texto1;}
-
-.marca2{grid-area: marca2;}
-
-.texto2{grid-area: texto2;}
-
-.marca3{grid-area: marca3;}
-
-.texto3{grid-area: texto3;}
-
-.marca4{grid-area: marca4;}
-
-.texto4{grid-area: texto4;}
-
-.marca5{grid-area: marca5;}
-
-.texto5{grid-area: texto5;}
-
-.marca6{grid-area: marca6;}
-
-.texto6{grid-area: texto6;}
-
-.grid_marcas img{
-    width: 100%; height: 100%; padding: 10%;
+form {
+  max-width: 500px;
+  margin: 0 auto;
+}
+form .form-label {
+  font-weight: 500;
+}
+form .form-control {
+  padding: 0.5rem 0.75rem;
+}
+form button {
+  margin-top: 0.5rem;
+  min-width: 120px;
 }
 
-.grid_marcas li{
-    text-align: center;
-    list-style: none;
+.carousel {
+  margin-bottom: 30px;
+}
+.carousel .carousel-item img {
+  object-fit: cover;
+  height: 400px;
+}
+.carousel .carousel-control-prev-icon,
+.carousel .carousel-control-next-icon {
+  filter: invert(1);
+}
+@media (max-width: 768px) {
+  .carousel .carousel-item img {
+    height: 250px;
+  }
 }
 
-/* Catalogo */
-
-
-/* Catalogo Grid */
-
-.h1_catalogo{
-    text-align: center;
-    padding-top: 3%;
+.carruseltext_grid {
+  padding: 2rem;
+}
+.carruseltext_grid h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+.carruseltext_grid p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+@media (max-width: 768px) {
+  .carruseltext_grid {
+    padding: 1rem;
+  }
+  .carruseltext_grid h2 {
+    font-size: 1.4rem;
+  }
+  .carruseltext_grid p {
+    font-size: 0.95rem;
+  }
 }
 
-@media(max-width: 599px){
-
-
-.catalogo_grid{
-
-    display: flex;
-    
-    flex-wrap: wrap;
-
-    flex-direction: column;
-
-    align-items: center;
-
-    align-content: space-around;
-
-    justify-content: space-around;
-
-    justify-items: center;
-
-    width: 100%;
-    
-    padding-bottom: 15%;}
-
-    .card-img-top{
-        height: 12rem;
-        width: 100%;
-    }
-
-
-    .card1{
-        height: auto;
-        width: auto;
-        padding: 2rem;
-        
-
-    }
-    .card2{
-        
-        padding: 2rem;
-
-    }
-
-    .card3{
-        
-        padding: 2rem;
-    }
-
-    .card4{
-        
-        padding: 2rem;
-    }
-
+.grid_marcas {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+  padding: 2rem;
+}
+.grid_marcas li {
+  text-align: center;
+  font-weight: bold;
+}
+.grid_marcas img {
+  width: 100px;
+  display: block;
+  margin: 0 auto;
 }
 
-@media (min-width: 600px) {
-
-.catalogo_grid{
-    display: grid;
-
-    grid-template-areas: 
-    "modelo1 modelo2"
-    "modelo3 modelo4";
-
-    grid-template-columns: 1fr 1fr ;
-
-    grid-template-rows: 1fr 1fr;
-
-    
-    justify-items: center;
-
-    padding: 10%;
-
+.titulo_marcas {
+  text-align: center;
+  font-size: 1.6rem;
+  margin-top: 2rem;
 }
 
-.card-img-top{
-    height: 12rem;
-    width: 100%;
+@media (max-width: 768px) {
+  .grid_marcas {
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+    padding: 1rem;
+  }
+  .titulo_marcas {
+    font-size: 1.3rem;
+  }
 }
 
-
-.card1{
-    grid-area: modelo1;
-    
-    
-
-}
-.card2{
-    grid-area: modelo2;
-    margin-bottom: 2rem;
-
-}
-
-.card3{
-    grid-area: modelo3;
-    margin-bottom: 5%;
-}
-
-.card4{
-    grid-area: modelo4;
-    margin-bottom: 2rem;
-}
-
-
-}
-
-
-
-/* Cotizacion */
-
-.h1_cotizacion{
-    text-align: center;
-}
-
-.cotizador{
-
-    border-style: outset;
-    
-    padding: 10%;
-
-    display: flex;
-
-    flex-direction: column;
-
-    justify-content: center;
-    
-    align-items: center;
-
-   
-}
-
-/* Contacto */
-
-.contacto_main{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
-    
-}
+/*# sourceMappingURL=style.css.map */

@@ -1,199 +1,155 @@
 <!DOCTYPE html>
-
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!--Titulo paginas-->
-    <title>HJ Exclusive</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HJ Exclusive</title>
 
-    <!--CSS-->
-    <link rel="stylesheet" href="./css/style.css">
+  <!-- CSS -->
+  <link rel="stylesheet" href="./css/style.css" />
 
-    <!--CSS BOOSTRAP-->
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
-    
-    
-
-    
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous" />
 </head>
 
-    <!--Todo lo visible-->
-
 <body>
-  
-   
-    
-    <Header>
-        
-        <!--NAVBAR-->
 
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            
-            <div class="container-fluid  ">
-                
-                <a class="navbar-brand" href="#">
-                    
-                    <img src="./media/logo y recursos multi/logo_definitivo.jpeg" alt="logo" width="80" height="60">
-                
-                </a>
-                
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                
-                    <span class="navbar-toggler-icon"></span>
+  <header>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img class="logo-hj" src="./media/logo y recursos multi/logo_definitivo.jpeg" alt="Logo HJ Exclusive" />
 
-                </button>
-                    
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    
-                    <ul class="navbar-nav ">
-                        
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
-                        
-                        <li class="nav-item">
-                            <a class="nav-link" href="./paginas/catalogo.html">Catalogo</a>
-                        </li>
-                        
-                        <li class="nav-item">
-                            <a class="nav-link" href="./paginas/cotizacion.html">Cotizacion</a>
-                        </li>
-                        
-                        <li class="nav-item">
-                            <a class="nav-link" href="./paginas/contacto.html">Contacto</a>
-                        </li>
-                        
-                        <li class="nav-item">
-                            <a class="nav-link" href="./paginas/post-venta.html" >Post-venta</a>
-                        </li>
-            
-                    </ul>
-                    
-                </div>
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./paginas/catalogo.html">Catálogo</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./paginas/cotizacion.html">Cotización</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./paginas/contacto.html">Contacto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./paginas/post-venta.html">Post-venta</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="index_grid">
+
+      <!-- Carrusel -->
+      <section class="carrusel_grid">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+              aria-label="Slide 3"></button>
+          </div>
+
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="3000">
+              <img src="./media/galeria/oportunidades.webp" class="d-block w-100" alt="Promoción oportunidades" />
             </div>
-        </nav>
-    
-    </Header>
-   
- 
+            <div class="carousel-item" data-bs-interval="3000">
+              <img src="./media/galeria/hot_sale.jpg" class="d-block w-100" alt="Hot Sale 1" />
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+              <img src="./media/galeria/hot_sale_2.png" class="d-block w-100" alt="Hot Sale 2" />
+            </div>
+          </div>
 
-    <!--Galeria-->
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+          </button>
 
-    <main>
-        <section class="index_grid">
-            
-            <section class="carrusel_grid">
-        
-                <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-                    
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                    </div>
-                    
-                    <div class="carousel-inner" data-bs-interval="3000">
-                        
-                        <div class="carousel-item active">
-                            
-                            <img src="./media/galeria/oportunidades.webp" class="d-block w-100" alt="...">
-                        
-                        </div>
-                    
-                        <div class="carousel-item" data-bs-interval="3000">
-                            
-                            <img src="./media/galeria/hot_sale.jpg" class="d-block w-100" alt="...">
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+          </button>
+        </div>
+      </section>
 
-                        </div>
-                        
-                        <div class="carousel-item" data-bs-interval="3000">
-                            
-                            <img src="./media/galeria/hot_sale_2.png" class="d-block w-100" alt="...">
+      <!-- Texto de oportunidades -->
+      <section class="carruseltext_grid">
+        <h2>Oportunidades del mes</h2>
+        <p>¡Aprovechá nuestras promociones limitadas en modelos seleccionados! Stock exclusivo disponible solo por este mes.</p>
+      </section>
 
-                        </div>
+      <!-- Marcas -->
+      <h2 class="titulo_marcas">Algunas de nuestras marcas</h2>
 
-                    </div>
+      <ul class="grid_marcas">
+        <li>
+          BMW
+          <img src="./media/logos marcas/logo_bmw.png" alt="Logo BMW" />
+        </li>
+        <li>
+          RAM
+          <img src="./media/logos marcas/logo_ram.png" alt="Logo RAM" />
+        </li>
+        <li>
+          Volkswagen
+          <img src="./media/logos marcas/logo_vw.png" alt="Logo Volkswagen" />
+        </li>
+        <li>
+          Jeep
+          <img src="./media/logos marcas/logo_jeep.png" alt="Logo Jeep" />
+        </li>
+        <li>
+          Mercedes Benz
+          <img src="./media/logos marcas/logo_mb.png" alt="Logo Mercedes Benz" />
+        </li>
+        <li>
+          Audi
+          <img src="./media/logos marcas/logo_audi.png" alt="Logo Audi" />
+        </li>
+      </ul>
+    </section>
+  </main>
 
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
+  <!-- Footer -->
+  <footer>
+    <h3>¡Seguinos en nuestras redes!</h3>
+    <section class="redes">
+      <a href="https://www.google.com/maps/place/Pilar+Centro,+B1629+Pilar,+Provincia+de+Buenos+Aires" target="_blank">
+        <img class="img_redes" src="./media/redes/logo_maps.png" alt="Logo Google Maps" />
+      </a>
+      <a href="https://www.instagram.com/" target="_blank">
+        <img class="img_redes" src="./media/redes/logo_ig.png" alt="Logo Instagram" />
+      </a>
+      <a href="https://web.whatsapp.com/" target="_blank">
+        <img class="img_redes" src="./media/redes/logo_whatsapp.png" alt="Logo WhatsApp" />
+      </a>
+    </section>
+  </footer>
 
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-
-                </div>
-
-            </section>
-            
-            <!--oportunidades-->
-
-            <section class="carruseltext_grid">
-                    
-                <h2>Oportunidades del mes </h2>
-                
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam blanditiis, ratione error beatae voluptatem tenetur iure quis eos exercitationem alias at reiciendis quod soluta sunt nisi, odio quidem? Dolorum, aperiam.</p>
-
-            </section>
-            
-            <!--Marcas-->
-
-            <h2 class="titulo_marcas"> Algunas de nuestras marcas </h2> 
-            
-            
-        
-            <ul class="grid_marcas">
-                <li class="texto1">BMW</li> <img class="marca1" src="./media/logos marcas/logo_bmw.png" alt="logo_bmw">
-                <li class="texto2">RAM</li> <img class="marca2" src="./media/logos marcas/logo_ram.png" alt="lg_ram">
-                <li class="texto3">Volkswagen</li> <img class="marca3" src="./media/logos marcas/logo_vw.png" alt="lg_vw">
-                <li class="texto4">Jeep</li> <img class="marca4" src="./media/logos marcas/logo_jeep.png" alt="logo_jeep">
-                <li class="texto5">Mercedes Benz</li> <img class="marca5" src="./media/logos marcas/logo_mb.png" alt="lg_mb">
-                <li class="texto6">Audi</li> <img class="marca6" src="./media/logos marcas/logo_audi.png" alt="lg_audi">
-             </ul>
-            
-        
-            
-            
-            
-        </section>
-
-    </main>
-
-
- <!--Footer-->
- 
-    <footer>
-
-        <h3> ¡seguinos en nuestras redes!</h3>   
-        
-        <section class="redes">   
-
-            <a href="https://www.google.com/maps/place/Pilar+Centro,+B1629+Pilar,+Provincia+de+Buenos+Aires/@-34.4621612,-58.9124597,15z/data=!3m1!4b1!4m6!3m5!1s0x95bc9ccee419fdb9:0xb435fe8999de4750!8m2!3d-34.4651842!4d-58.9143317!16s%2Fg%2F11t4_mrd56?authuser=0&entry=ttu&g_ep=EgoyMDI1MDUxNS4xIKXMDSoASAFQAw%3D%3D">   
-            <img class="img_redes" src="./media/redes/logo_maps.png" alt="logo_maps"></a>
-
-            <a href="https://www.instagram.com/">
-            <img class="img_redes" src="./media/redes/logo_ig.png" alt="lg_ig"></a>
-                    
-            <a href="https://web.whatsapp.com/">
-            <img class="img_redes" src="./media/redes/logo_whatsapp.png" alt="lg_whatsapp"></a>    
-        
-        
-        </section>      
-
-    </footer>
-
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
-
-
-
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+    crossorigin="anonymous"></script>
 </body>
-
 
 </html>

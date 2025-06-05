@@ -1,0 +1,30 @@
+
+// cotizador //
+
+.cotizador {
+  max-width: 600px;
+  margin: 0 auto;
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+    .form-label {
+      font-weight: 500;
+    }
+
+    .form-control,
+    .form-select {
+      padding: 0.5rem 0.75rem;
+    }
+
+    button {
+      align-self: flex-start;
+      min-width: 120px;
+    }
+  }
+}
+
+
+

@@ -1,0 +1,42 @@
+
+// NAVBAR //
+
+
+
+.navbar {
+  background-color: $color-navbar;
+
+  .nav-link {
+    color: $color-texto;
+    margin: 0 10px;
+
+    &:hover {
+      background-color: $color-hover;
+      border-radius: 5px;
+    }
+
+    &.active {
+      font-weight: bold;
+    }
+  }
+
+  .navbar-toggler {
+    border: none;
+  }
+
+  .navbar-brand img {
+    border-radius: 6px;
+  }
+
+  @media (max-width: 768px) {
+    .nav-link {
+      margin: 5px 0;
+    }
+  }
+}
+
+.logo-hj {
+  width: 80px;
+  height: 60px;
+  object-fit: contain;
+}
